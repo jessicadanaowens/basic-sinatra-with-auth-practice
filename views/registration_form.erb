@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+  <h1><%= flash[:notice] %></h1>
+<% end %>
+<form method="post" action="/registration_form" >
+  <ul>
+    <li><label class="names" for="username">Username:</label></li>
+    <li><input type="text" name="username" id="username" /></li>
+    <li><label class="password" for="password">Password:</label></li>
+    <li><input type="password" name="password" id="password" /></li>
+    <li><input type="submit" value="Register" class="Register" /></li>
+  </ul>
+</form>

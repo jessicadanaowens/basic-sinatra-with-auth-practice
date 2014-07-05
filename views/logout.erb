@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+<h1><%= flash[:notice] %></h1>
+<% end %>
+
+<form method="post" action="/logout" >
+  <ul>
+    <li><input type="submit" value="Logout" class="logout" /></li>
+  </ul>
+</form>
