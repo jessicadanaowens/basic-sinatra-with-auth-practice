@@ -1,9 +1,11 @@
 <% if flash[:notice] %>
 <h1><%= flash[:notice] %></h1>
 <% end %>
-
+<%= info[session[:user_id]][:user] %>
 <form method="post" action="/logout" >
   <ul>
     <li><input type="submit" value="Logout" class="logout" /></li>
   </ul>
 </form>
+
+
