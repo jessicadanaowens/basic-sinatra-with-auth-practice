@@ -1,12 +1,11 @@
-<a href="/registration/new">Register </a><%= flash[:message] unless flash[:message] == nil %>
+<h1>New Registration</h1>
 
-<h1>Sign In</h1>
-<form method="post" action="/sessions" >
+<form method="post" action="/registration" >
   <ul>
     <li><label for="username">Username</label></li>
     <li><input type="text" name="username" id="username" /></li>
     <li><label for="password">Password</label></li>
     <li><input type="password" name="password" id="password" /></li>
-    <li><input type="submit" value="Login" class="loginbutton"/></li>
+    <li><input type="submit" value="Register" class="registerbutton"/></li>
   </ul>
 </form>

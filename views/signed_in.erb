@@ -1,2 +1,5 @@
-<h1>Welcome, <%= username %></h1>
-<a href="/signed_out">Sign Out</a>
+<h1>Welcome <%= current_user[:username] %> </h1>
+
+<form method="get" action="/signed_out" >
+  <li><input type="submit" value="Logout" class="logout"/></li>
+</form>
